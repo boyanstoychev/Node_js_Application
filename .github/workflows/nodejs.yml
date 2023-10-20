@@ -61,7 +61,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Push Docker image
         run: |
-         sudo docker login -u boyanstoychev@gmail.com -p ${{ secrets.DOCKER_PASSWORD }} https://boyansjfrog.jfrog.io
-         sudo docker tag my-node-app:latest https://boyansjfrog.jfrog.io/my-jfrog-repository/my-node-app:latest
-         sudo docker push https://boyansjfrog.jfrog.io/my-jfrog-repository/my-node-app:latest    
+         sudo docker login -u boyanstoychev@gmail.com -p ${{ secrets.DOCKER_PASSWORD }} boyansjfrog.jfrog.io
+         sudo docker tag my-node-app:latest boyansjfrog.jfrog.io/my-jfrog-repository/my-node-app:latest
+         sudo docker push boyansjfrog.jfrog.io/my-jfrog-repository/my-node-app:latest    
     
