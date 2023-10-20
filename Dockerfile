@@ -12,3 +12,4 @@ RUN npm install -g pm2
 EXPOSE 8000
 # Start the application with PM2
 CMD pm2-runtime start index.js
+
